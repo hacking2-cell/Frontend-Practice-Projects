@@ -1,0 +1,433 @@
+@font-face {
+  font-family: futura-pt;
+  src: url(assets/fonts/FuturaCyrillicBook.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  color: #000;
+  margin: 0 auto;
+  background-color: #F3F3F3;
+  max-width: 1600px;
+}
+
+header, main, footer {
+  background: white;
+}
+
+main {
+  padding-bottom: 9vw;
+  margin-bottom: 2px;
+}
+
+header {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0 1em;
+}
+
+header nav{
+  border-bottom: 2px solid #F3F3F3;
+  padding: 0 1rem; /*to keep content within bounds */
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+#left-navbar {
+  display: flex;
+  align-items: center;
+  gap: 2em; /* Adds space between the logo and menu */
+}
+
+#main-logo {
+  width: 3.75em;
+  height: 1.75em;
+  margin-left: 1em;
+  height: auto;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem; /* Consistent spacing between list items */
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p:not(.video-caption):not(footer p) {
+  display: block;
+  font-size: 1.3rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+#about-jobs {
+  padding: 1.5rem 2rem; /* If needed, or adjust the flex alignment */
+}
+
+.orange {
+  color: #FF764D;
+}
+
+.blue {
+  color: blue;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#main img {
+  width: 82vw;
+  max-width: 85%;
+  height: 75vh;
+  display: block;
+  object-position: center;
+  object-fit: cover;
+}
+
+#image-text {
+  position: absolute;
+  color: #ff6435;
+  font-size: 10vw;
+  text-align: center;
+  font-weight: 700;
+}
+
+.text-pack {
+  width: 60vw;
+  margin: 7rem auto;
+}
+
+.first-images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  max-height: 880px;
+  height: 59vw;
+  overflow: hidden;
+}
+
+.image-one {
+  width: 630px;
+  height: 630px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.image-two {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  margin-left: 2%;
+}
+
+.image2-background {
+  background-color: #FBFFA7;
+  padding: 30%;
+  max-width: 1000px;
+  position: absolute;
+  top: 20;
+  right: 0;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container {
+  width: 54vw;
+  margin: auto;
+}
+
+.thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  border: none;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  z-index: 1;
+}
+
+.play-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.iframe-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.hidden {
+  display: none,
+}
+
+.video-caption {
+  font-weight: 600;
+  padding: 10px;
+}
+
+.second-images {
+  max-width: 100%;
+  height: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.squareImg-container {
+  max-height: 80%;
+  max-width: 33%;
+  margin-left: 2rem;
+}
+
+.one {
+  margin-bottom: 28%;
+  height: 333px;
+}
+
+.squareImg-container, .long-img-container {
+  z-index: 1;
+}
+
+.one, .two, .long-img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+}
+
+.long-img-container {
+  max-height: 52%;
+  max-width: 43%;
+  overflow: hidden;
+}
+
+#green-bg {
+  position: absolute;
+  background-color: #b6ffc0;
+  padding: 40% 30%;
+  top: 10;
+  left: 0;
+  z-index: 0;
+}
+
+.videoTwo-container {
+  width: 84%;
+  margin: auto;
+}
+
+.third-images {
+  max-width: 100%;
+  height: 59vw;
+  max-height: 60rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.purple-images {
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+#purple-bg {
+  max-width: 100%;
+  position: absolute;
+  z-index: 0;
+  padding: 30% 33.3%;
+  background-color: #D5B3FF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first-purple {
+  width: 33.5%;
+  max-width: 40rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin-left: 8.6%;
+}
+
+.second-purple {
+  width: 41%;
+  max-width: 50rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-left: 17%;
+}
+
+#split-layout {
+  max-width: 84%;
+  margin: 0 auto;
+  background-color: #B1C5FF;
+  display: flex;
+  align-items: center;
+}
+
+#split-layout img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: right;
+}
+
+#banner-text h1 {
+  max-width: 70%;
+  margin: 0 auto 10%;
+}
+
+.footer-container {
+  max-width: 84%;
+  margin: 0 auto;
+  padding: 7vw 0;
+}
+
+.footer-logo {
+  width: 17%;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  margin: 5% 0;
+}
+
+footer p {
+  display: block;
+  font-size: 1.2rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.column-squares{
+  min-width: 23%;
+  max-width: 43%;
+  margin: 2% 0;
+}
+
+.button-input {
+  display: flex;
+  margin: 3% 0;
+}
+
+.button-input input {
+  padding: 3%;
+  width: 75%;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.button-input button {
+  width: 25%;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+.select-container {
+  width: 23vw;
+  margin-top: 2%;
+  display: flex;
+  gap: 1%;
+}
+
+.select-container select {
+  background-color: #F3F3F3;
+  padding: 2%;
+  border: none;
+}
+
+.select-language {
+  width: 40%;
+}
+
+.select-location {
+  width: 60%
+}
+
+.last-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-row ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2%;
+  width: 52%;
+}
+
+.last-row a, .last-logo p {
+  font-size: small;
+  font-weight: 600;
+}
+
+.last-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5%;
+  width: 13%;
+}
+
+#footer-logo {
+  width: 50px;
+  margin-top: 5px;
+}
